@@ -1,4 +1,4 @@
-## POE.TRADE Scrapper
+## POE.TRADE Scraper
 
 This script allows you to connect to http://poe.trade via websocket search for items that match a specific search pattern. When that occurs, the most recent item gets copied to your clipboard
 
