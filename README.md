@@ -12,10 +12,8 @@ This script allows you to connect to http://poe.trade via websocket search for i
 ### Usage
 
 ```python
-python main.py True|False
+python main.py
 ```
-
-The argument enables\disables sound notification when new items are parsed
 
 A user input is required in order to enter the desired search pattern, you just need to copy paste a PoE.Trade URL (e.g. http://poe.trade/search/ugonaranikimot or http://poe.trade/search/ugonaranikimot/live)
 

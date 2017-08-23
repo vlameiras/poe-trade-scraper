@@ -1,7 +1,6 @@
 import websocket
 import thread
 import time
-import sys
 import requests
 from bs4 import BeautifulSoup
 import pygame
@@ -22,10 +21,10 @@ def on_message(ws, message):
         soup = BeautifulSoup(html_doc, 'html.parser')
         items = soup.find_all("tbody", { "class" : "item" })
 
-        if sys.argv[1] == 'True':
-            pygame.mixer.init()
-            pygame.mixer.music.load("beep.wav")
-            pygame.mixer.music.play()
+        pygame.mixer.init()
+        pygame.mixer.music.load("beep.wav")
+        pygame.mixer.music.play()
+        
         for item in items:
             pyperclip.copy('@'+item.get('data-ign') + ' Hi, I would like to buy your ' + item.get('data-name') + ' listed for ' + item.get('data-buyout') + ' in ' + item.get('data-league')+' (stash tab \"' + item.get('data-tab')+ '\"; position: left ' + item.get('data-x')+ ', top ' +item.get('data-y') +')')
             #should put some placeholders instead
