@@ -1,0 +1,22 @@
+## POE.TRADE Scrapper
+
+This script allows you to connect to http://poe.trade via websocket search for items that match a specific search pattern. When that occurs, the most recent item gets copied to your clipboard
+
+### Dependencies
+* BeautifulSoup 
+* pygame
+* pyperclip
+* websocket-client
+
+### Usage
+
+```python
+python main.py True|False
+```
+
+The argument enables\disables sound notification when new items are parsed
+
+A user input is required in order to enter the desired search pattern, you just need to copy paste a PoE.Trade URL (e.g. http://poe.trade/search/ugonaranikimot or http://poe.trade/search/ugonaranikimot/live)
+
+## Notes
+This is a fairly rudidemtary script that requires improvement, I've just made it to help out a friend that loves Path of Exile and I've decided to share it should someone else find it useful
