@@ -29,7 +29,7 @@ def on_message(ws, message):
         for item in items:
             pyperclip.copy(item.get('data-name'))
             #should put some placeholders instead
-            print('Hey ' +item.get('data-ign') + 'I want your ' + item.get('data-name') + ' listed for ' + item.get('data-buyout') + ' on ' + item.get('data-league')+' located on your stash tab ' + item.get('data-tab')+ ' located left ' + item.get('data-x')+ ' top ' +item.get('data-y') )
+            print('Hey ' +item.get('data-ign') + ' I want your ' + item.get('data-name') + ' listed for ' + item.get('data-buyout') + ' on ' + item.get('data-league')+' located on your stash tab ' + item.get('data-tab')+ ' located left ' + item.get('data-x')+ ' top ' +item.get('data-y') )
  
 def on_error(ws, error):
     print(error)

@@ -6,6 +6,7 @@ This script allows you to connect to http://poe.trade via websocket search for i
 * BeautifulSoup 
 * pygame
 * pyperclip
+* requests
 * websocket-client
 
 ### Usage
