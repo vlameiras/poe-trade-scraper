@@ -1,0 +1,4 @@
+bs4==0.0.1
+pygame==1.9.3
+pyperclip==1.5.27
+websocket-client==0.44.0
