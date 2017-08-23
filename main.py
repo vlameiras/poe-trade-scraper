@@ -27,11 +27,9 @@ def on_message(ws, message):
             pygame.mixer.music.load("beep.wav")
             pygame.mixer.music.play()
         for item in items:
-            #por placeholders neste caos lul
             pyperclip.copy(item.get('data-name'))
+            #should put some placeholders instead
             print('Hey ' +item.get('data-ign') + 'I want your ' + item.get('data-name') + ' listed for ' + item.get('data-buyout') + ' on ' + item.get('data-league')+' located on your stash tab ' + item.get('data-tab')+ ' located left ' + item.get('data-x')+ ' top ' +item.get('data-y') )
-    else:
-        print("nothing found")
  
 def on_error(ws, error):
     print(error)
