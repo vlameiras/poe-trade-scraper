@@ -19,4 +19,7 @@ The argument enables\disables sound notification when new items are parsed
 A user input is required in order to enter the desired search pattern, you just need to copy paste a PoE.Trade URL (e.g. http://poe.trade/search/ugonaranikimot or http://poe.trade/search/ugonaranikimot/live)
 
 ## Notes
-This is a fairly rudidemtary script that requires improvement, I've just made it to help out a friend that loves Path of Exile and I've decided to share it should someone else find it useful
+This is a fairly rudimentary script that requires improvement, I've just made it to help out a friend that loves Path of Exile and I've decided to share it should someone else find it useful
+
+## Todo
+This works decently for specific filters, if your filter is too broad you will receive several items per iteration and you will only have the most recent one on your clipboard
