@@ -25,6 +25,8 @@ python main.py
 
 A user input is required in order to enter the desired search pattern, you just need to copy paste a PoE.Trade URL (e.g. http://poe.trade/search/ugonaranikimot or http://poe.trade/search/ugonaranikimot/live)
 
+Warning: You need to have Poe.trade Live search page cosed before using the script or it won't work since Poe.trade limits one websocket per IP.
+
 ## Notes
 This is a fairly rudimentary script that requires improvement, I've just made it to help out a friend that loves Path of Exile and I've decided to share it should someone else find it useful
 
