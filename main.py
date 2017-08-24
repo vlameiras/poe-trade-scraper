@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 import pygame
 import pyperclip
 
+import settings
+
 new_id = -1
 poe_trade_url = None
 
@@ -14,7 +16,7 @@ def on_message(ws, message):
     global poe_trade_url
 
     payload = {'id': new_id}
-    r = requests.post("http://poe.trade/search/"+poe_trade_url+"/live", data=payload, headers={'Content-Type': 'application/x-www-form-urlencoded'})
+    r = requests.post(settings.SEARCH_URL + poe_trade_url + "/live", data=payload, headers={'Content-Type': 'application/x-www-form-urlencoded'})
     new_id = r.json()['newid']
     if r.json().has_key('data'):
         html_doc = r.json()['data']
@@ -42,7 +44,7 @@ if __name__ == "__main__":
     poe_trade_url = poe_trade_url_split.split("/live",1)[0]
 
     websocket.enableTrace(False)
-    ws = websocket.WebSocketApp("ws://live.poe.trade/" + poe_trade_url,
+    ws = websocket.WebSocketApp(settings.WS_URL + poe_trade_url,
                               on_message = on_message,
                               on_error = on_error,
                               on_close = on_close)
