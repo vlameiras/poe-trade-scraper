@@ -28,5 +28,5 @@ A user input is required in order to enter the desired search pattern, you just 
 ## Notes
 This is a fairly rudimentary script that requires improvement, I've just made it to help out a friend that loves Path of Exile and I've decided to share it should someone else find it useful
 
-## Todo
+## Known issues 
 This works decently for specific filters, if your filter is too broad you will receive several items per iteration and you will only have the most recent one on your clipboard
