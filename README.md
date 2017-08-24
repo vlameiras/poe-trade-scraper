@@ -1,6 +1,6 @@
 ## POE.TRADE Scraper
 
-This Python (2.7) script allows you to connect to http://poe.trade via websocket and automatically be notified for items that match a specific search pattern. When that occurs, the most recent item gets copied to your clipboard and allows you to instantly message the seller ingame.
+This Python (2.7) script allows you to connect to http://poe.trade and automatically be notified for items that are placed on public stash tabs and match a specific search pattern. When that occurs, the most recent item gets copied to your clipboard and allows you to instantly message the seller ingame.
 
 ### Dependencies
 
