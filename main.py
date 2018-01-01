@@ -1,5 +1,5 @@
 import websocket
-import thread
+import threading
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -18,7 +18,7 @@ def on_message(ws, message):
     payload = {'id': new_id}
     r = requests.post(settings.SEARCH_URL + poe_trade_url + "/live", data=payload, headers={'Content-Type': 'application/x-www-form-urlencoded'})
     new_id = r.json()['newid']
-    if r.json().has_key('data'):
+    if 'data' in r.json():
         html_doc = r.json()['data']
         soup = BeautifulSoup(html_doc, 'html.parser')
         items = soup.find_all("tbody", { "class" : "item" })
@@ -39,7 +39,7 @@ def on_close(ws):
     print("### closed ###")
 
 if __name__ == "__main__":
-    poe_trade_url_ini = raw_input("Please enter your poe.trade URL: ")
+    poe_trade_url_ini = input("Please enter your poe.trade URL: ")
     poe_trade_url_split = poe_trade_url_ini.split("search/", 1)[1]
     poe_trade_url = poe_trade_url_split.split("/live",1)[0]
 
