@@ -1,3 +1,6 @@
+## Note
+A new version with support for Path of Exile official Trade page is is now available at https://github.com/vlameiras/poe-trade-parser
+
 ## POE.TRADE Scraper
 
 This Python 3 script allows you to connect to http://poe.trade and automatically be notified for items that are placed on public stash tabs and match a specific search pattern. When that occurs, the most recent item gets copied to your clipboard and allows you to instantly message the seller ingame.
